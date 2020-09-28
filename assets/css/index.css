@@ -37,7 +37,7 @@
     }
     .About-Me{
         margin-left: 3%;
-        width: 400px;
+        width: 350px;
     }
     .About-Me-Intro{
         font-family:'Roboto Slab', serif;
@@ -46,11 +46,11 @@
     }
     .Skills{
         margin-left: 3%;
-        width: 400px;
+        width: 350px;
     }
     .Projects{
         margin-left: 3%;
-        width: 400px;
+        width: 350px;
     }
     #About-Me-Divider{
         margin-right: 235px;
