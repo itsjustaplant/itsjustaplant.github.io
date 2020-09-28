@@ -23,7 +23,6 @@
         animation: rainbow 8s ease-in-out infinite;
         background-size: 400% 100% ;
     }
-
     .Div-Header{
         font-family: Montserrat, Helvetica, Arial, sans-serif;
         color: #4E342E;
@@ -105,7 +104,12 @@
         color: darkorange;
     }
 }
-
+/*
+by the help of this post i ,finally, understand how it works
+---you paint the wall and put some text with only borders than you move
+    the wall to make the magic happen. Fantastic init?---
+https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css/54702294
+ */
 @keyframes rainbow {
     100%{
         background-position: 0 0;
