@@ -1,0 +1,81 @@
+@media (max-width: 1600px) {
+    /*
+    Choosing color palette from
+    https://htmlcolorcodes.com/color-chart/material-design-color-chart/
+     */
+    body{
+        background-color: #f0f0f0  !important;
+    }
+    .Name{
+        font-family: Montserrat, Helvetica, Arial, sans-serif;
+        color:#388E3C;
+        display: flex;
+        justify-content: center;
+        font-size: 48px;
+    }
+
+    .Div-Header{
+        font-family: Montserrat, Helvetica, Arial, sans-serif;
+        color: #4E342E;
+        font-size: 4vh;
+    }
+    .Div-Sub-Header{
+        font-family: Montserrat, Helvetica, Arial, sans-serif;
+        color: #4E342E;
+    }
+    .mui-list--styled{
+        font-family: 'Roboto Slab', serif;
+        color: #3E2723;
+        font-size: 16px;
+    }
+    .Socials{
+        display: flex;
+        justify-content: center;
+    }
+    .mui--divider-top{
+        color:#FFC107;
+    }
+    .About-Me{
+        margin-left: 3%;
+        width: 400px;
+    }
+    .About-Me-Intro{
+        font-family:'Roboto Slab', serif;
+        font-size: 20px;
+        color: #252525;
+    }
+    .Skills{
+        margin-left: 3%;
+        width: 400px;
+    }
+    .Projects{
+        margin-left: 3%;
+        width: 400px;
+    }
+    #About-Me-Divider{
+        margin-right: 235px;
+    }
+    #Skills-Divider{
+        margin-right: 310px;
+    }
+    #Projects-Divider{
+        margin-right: 250px;
+    }
+    #github-logo{
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+    }
+    #linkedin-logo{
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    #soundcloud-logo{
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+    }
+
+}
