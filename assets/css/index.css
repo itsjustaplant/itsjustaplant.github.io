@@ -1,10 +1,11 @@
-@media (max-width: 1600px) {
+@media (min-width: 320px) {
     /*
     Choosing color palette from
     https://htmlcolorcodes.com/color-chart/material-design-color-chart/
      */
     body{
         background-color: #f0f0f0  !important;
+        margin-top: -20px;
     }
     .Introduction{
         box-shadow: 0 3px 0 #388E3C;
@@ -14,13 +15,13 @@
     }
     .Name{
         font-family: Montserrat, Helvetica, Arial, sans-serif;
-        background: linear-gradient(to right,indianred,burlywood,darksalmon,darkorange);
+        background: linear-gradient(to right,#80D8FF,indianred,burlywood,#C51162,#CE93D8,darkorange);
         -webkit-background-clip: text;
         color: transparent;
         display: flex;
         justify-content: center;
-        font-size: 48px;
-        animation: rainbow 8s ease-in-out infinite;
+        font-size: 6vh;
+        animation: rainbow 12s ease-in-out infinite;
         background-size: 400% 100% ;
     }
     .Div-Header{
@@ -38,6 +39,7 @@
         font-size: 16px;
     }
     .Socials{
+        margin-top: -20px;
         display: flex;
         justify-content: center;
     }
@@ -52,6 +54,7 @@
         font-family:'Roboto Slab', serif;
         font-size: 20px;
         color: #252525;
+        margin-bottom: 20px;
     }
     .Skills{
         margin-left: 3%;
