@@ -48,7 +48,7 @@
     }
     .About-Me{
         margin-left: 3%;
-        width: 350px;
+        width: 100vw;
     }
     .About-Me-Intro{
         font-family:'Roboto Slab', serif;
@@ -60,10 +60,7 @@
         margin-left: 3%;
         width: 350px;
     }
-    .Projects{
-        margin-left: 3%;
-        width: 350px;
-    }
+
     #About-Me-Divider{
         margin-right: 235px;
     }
@@ -74,20 +71,20 @@
         margin-right: 250px;
     }
     #github-logo{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
     #linkedin-logo{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         display: flex;
         justify-content: center;
         padding-right: 10px;
         padding-left: 10px;
     }
     #soundcloud-logo{
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
     }
 }
 @keyframes name_animation {
