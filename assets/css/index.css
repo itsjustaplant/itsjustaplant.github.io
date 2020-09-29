@@ -20,7 +20,7 @@
         display: flex;
         justify-content: center;
         font-size: 48px;
-        animation: rainbow 8s ease-in-out infinite;
+        animation: color-wheel 8s ease-in-out infinite;
         background-size: 400% 100% ;
     }
     .Div-Header{
@@ -40,9 +40,6 @@
     .Socials{
         display: flex;
         justify-content: center;
-    }
-    .mui--divider-top{
-        color:#FFC107;
     }
     .About-Me{
         margin-left: 3%;
@@ -84,30 +81,13 @@
         height: 40px;
     }
 }
-@keyframes name_animation {
-    100%{
-        color: #FFC107;
-    }
-    75%{
-        color: indianred;
-    }
-    50%{
-        color: burlywood;
-    }
-    25%{
-        color: darksalmon;
-    }
-    0%{
-        color: darkorange;
-    }
-}
 /*
 by the help of this post i ,finally, understand how it works
 ---you paint the wall and put some text with only borders than you move
     the wall to make the magic happen. Fantastic init?---
 https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css/54702294
  */
-@keyframes rainbow {
+@keyframes color-wheel{
     100%{
         background-position: 0 0;
     }
