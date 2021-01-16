@@ -31,13 +31,17 @@
     .Introduction{
         width: 390px;
         float: left;
-        font-family: 'Gudea', sans-serif;
         color: var(--main-text);
         font-size: 20px;
         text-align: left;
     }
+    #Name{
+        font-family: 'Oxygen', sans-serif;
+        color: var(--main-text);
+    }
     #Brief{
         color: var(--sub-text);
+        font-family: 'Gudea', sans-serif;
     }
     #Profile-Picture{
         border-radius: 50%;
@@ -46,13 +50,13 @@
         object-fit: cover;
     }
     .Div-Header{
-        font-family: 'Gudea', sans-serif;
+        font-family: 'Oxygen', sans-serif;
         color: var(--main-text);
         font-size: 20px;
         text-align: left;
     }
     .Div-Sub-Header{
-        font-family: 'Gudea', sans-serif;
+        font-family: 'Oxygen', sans-serif;
         color: var(--main-text);
         font-size: 20px;
         text-align: left;
@@ -95,18 +99,25 @@
     }
     .Socials-Sub-Link{
         font-family: 'Gudea', sans-serif;
+        font-size: 20px;
         color: var(--main-text);
-        margin-left: 50px;
+        margin: 0 auto;
+        text-decoration: none;
+    }
+    .Socials-Sub-Link:hover{
+        animation: 0.4s underline forwards;
     }
     .Social-1{
         width: 50%;
-        margin: 0;
         float: left;
+        margin: 0 auto;
+        font-size: 20px;
     }
     .Social-2{
         width: 50%;
-        margin: 0;
         float: left;
+        margin: 0 auto;
+        font-size: 20px;
     }
     .switch {
         position: relative;
@@ -127,12 +138,10 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: var(--main-background);
-        -webkit-filter: invert();
+        background-color: var(--main-text);
         -webkit-transition: .4s;
         transition: .4s;
     }
-
     .slider:before {
         position: absolute;
         content: "";
@@ -140,7 +149,7 @@
         width: 26px;
         left: 4px;
         bottom: 4px;
-        background-color: var(--main-text);
+        background-color: var(--sub-text);
         -webkit-transition: .4s;
         transition: .4s;
     }
@@ -152,24 +161,22 @@
         -ms-transform: translateX(26px);
         transform: translateX(26px);
     }
-
     /* Rounded sliders */
     .slider.round {
         border-radius: 34px;
     }
-
     .slider.round:before {
         border-radius: 50%;
     }
 }
-@keyframes rocket-light {
+@keyframes theme-light {
     100%{
         background-color: #DFDFDF;
         --main-text: #060606;
         --sub-text: #626262;
     }
 }
-@keyframes rocket-dark {
+@keyframes theme-dark {
     0%{
         background-color: #DFDFDF;
         --main-text: #060606;
@@ -180,103 +187,12 @@
         --main-text: #FAFAFA;
         --sub-text: #9E9E9E;
     }
-
 }
-@media  (max-width: 767px){
-    body{
-        background-color: #212121  !important;
-    }
-    .Header{
-        margin: 0 auto;
-        box-shadow: 0 3px 0 #DC5F40;;
-        color: #DC5F40;
-        text-align: left;
-    }
-    .Name{
-        font-family: 'Gudea', sans-serif;
-        background: linear-gradient(to right,indianred,burlywood,darksalmon,darkorange);
-        -webkit-background-clip: text;
-        color: transparent;
-        display: flex;
-        justify-content: center;
-        font-size: 48px;
-        animation: color-wheel 8s ease-in-out infinite;
-        background-size: 400% 100% ;
-    }
-    .Div-Header{
-        font-family: 'Gudea', sans-serif;
-        color: #FAFAFA;
-        font-size: 14px;
-        text-align: left;
-    }
-    .Div-Sub-Header{
-        font-family: 'Gudea', sans-serif;
-        color: #FAFAFA;
-        font-size: 16px;
-        text-align: left;
-
-    }
-    .Skill-Elements{
-        font-family: 'Gudea', sans-serif;
-        color: #9E9E9E;
-        text-align: left;
-        font-size: 16px;
-    }
-    .About-Me{
-        width: 100vw;
-        text-align: center;
-        margin: 0 auto;
-    }
-    .About-Me-Intro{
-        font-family: 'Gudea', sans-serif;
-        font-size: 16px;
-        color: #9E9E9E;
-        text-align: left;
-
-    }
-    .Skills{
-        text-align: center;
-        margin: 0 auto;
-    }
-    .Socials{
-        margin: 0 auto;
-    }
-    .Socials-Sub-Header{
-        font-family: 'Gudea', sans-serif;
-        font-size: 20px;
-        color: #9E9E9E;
-        text-align: left;
-    }
-    .Socials-Sub-Link{
-        font-family: 'Gudea', sans-serif;
-        color: #FAFAFA;
-        margin-left: 50px;
-    }
-    .Social-1{
-        width: 50%;
-        margin: 0;
-        float: left;
-    }
-    .Social-2{
-        width: 50%;
-        margin: 0;
-        float: left;
-    }
-}
-/*
-by the help of this post i ,finally, understand how it works
----you paint the wall and put some text with only borders than you move
-    the wall to make the magic happen. Fantastic init?---
-https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css/54702294
- */
-@keyframes color-wheel{
-    100%{
-        background-position: 0 0;
-    }
-    50%{
-        background-position: 100% 0;
-    }
+@keyframes underline {
     0%{
-        background-position: 0 0;
+        text-decoration: none;
+    }
+    100%{
+        text-decoration: underline;
     }
 }
