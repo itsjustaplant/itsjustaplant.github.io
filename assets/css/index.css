@@ -1,19 +1,200 @@
-@media (max-width: 1600px) {
+@media (min-width: 768px) {
     /*
     Choosing color palette from
     https://htmlcolorcodes.com/color-chart/material-design-color-chart/
      */
+    body.dark{
+        animation: rocket-dark 0.4s forwards;
+    }
+    body.light{
+        animation: rocket-light 0.4s forwards;
+    }
     body{
-        background-color: #f0f0f0  !important;
+        background-color: var(--main-background);
+        width: 540px;
+        margin: 0 auto;
+        --main-background: #212121;
+        --main-text: #fafafa;
+        --sub-text: #9E9E9E;
+    }
+    .Header{
+        width: 540px;
+        height: 50px;
+        margin: 50px auto;
+        text-align: left;
+    }
+    .Image{
+        width: 150px;
+        float: left;
+        filter: brightness(.8) contrast(1.2);
     }
     .Introduction{
-        box-shadow: 0 3px 0 #388E3C;
+        width: 390px;
+        float: left;
+        font-family: 'Gudea', sans-serif;
+        color: var(--main-text);
+        font-size: 20px;
+        text-align: left;
+    }
+    #Brief{
+        color: var(--sub-text);
+    }
+    #Profile-Picture{
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+    }
+    .Div-Header{
+        font-family: 'Gudea', sans-serif;
+        color: var(--main-text);
+        font-size: 20px;
+        text-align: left;
+    }
+    .Div-Sub-Header{
+        font-family: 'Gudea', sans-serif;
+        color: var(--main-text);
+        font-size: 20px;
+        text-align: left;
+
+    }
+    .Skill-Elements{
+        font-family: 'Gudea', sans-serif;
+        color: var(--sub-text);
+        text-align: left;
+        font-size: 20px;
+    }
+    .About-Me{
+        width: 540px;
+        text-align: center;
+        margin: 0 auto;
+
+    }
+    .About-Me-Intro{
+        font-family: 'Gudea', sans-serif;
+        font-size: 20px;
+        color: var(--sub-text);
+        text-align: left;
+
+    }
+    .Skills{
+        width: 540px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .Socials{
+        width: 540px;
+        height: 150px;
+        margin: 0 auto;
+    }
+    .Socials-Sub-Header{
+        font-family: 'Gudea', sans-serif;
+        font-size: 20px;
+        color: var(--sub-text);
+        text-align: left;
+    }
+    .Socials-Sub-Link{
+        font-family: 'Gudea', sans-serif;
+        color: var(--main-text);
         margin-left: 50px;
-        margin-right: 50px;
-        color:#388E3C;
+    }
+    .Social-1{
+        width: 50%;
+        margin: 0;
+        float: left;
+    }
+    .Social-2{
+        width: 50%;
+        margin: 0;
+        float: left;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        margin-left: 180px;
+    }
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--main-background);
+        -webkit-filter: invert();
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: var(--main-text);
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked + .slider {
+        background-color: var(--main-background);
+    }
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+}
+@keyframes rocket-light {
+    100%{
+        background-color: #DFDFDF;
+        --main-text: #060606;
+        --sub-text: #626262;
+    }
+}
+@keyframes rocket-dark {
+    0%{
+        background-color: #DFDFDF;
+        --main-text: #060606;
+        --sub-text: #626262;
+    }
+    100%{
+        background-color: #212121;
+        --main-text: #FAFAFA;
+        --sub-text: #9E9E9E;
+    }
+
+}
+@media  (max-width: 767px){
+    body{
+        background-color: #212121  !important;
+    }
+    .Header{
+        margin: 0 auto;
+        box-shadow: 0 3px 0 #DC5F40;;
+        color: #DC5F40;
+        text-align: left;
     }
     .Name{
-        font-family: Montserrat, Helvetica, Arial, sans-serif;
+        font-family: 'Gudea', sans-serif;
         background: linear-gradient(to right,indianred,burlywood,darksalmon,darkorange);
         -webkit-background-clip: text;
         color: transparent;
@@ -24,61 +205,63 @@
         background-size: 400% 100% ;
     }
     .Div-Header{
-        font-family: Montserrat, Helvetica, Arial, sans-serif;
-        color: #4E342E;
-        font-size: 4vh;
+        font-family: 'Gudea', sans-serif;
+        color: #FAFAFA;
+        font-size: 14px;
+        text-align: left;
     }
     .Div-Sub-Header{
-        font-family: Montserrat, Helvetica, Arial, sans-serif;
-        color: #4E342E;
+        font-family: 'Gudea', sans-serif;
+        color: #FAFAFA;
+        font-size: 16px;
+        text-align: left;
+
     }
-    .mui-list--styled{
-        font-family: 'Roboto Slab', serif;
-        color: #3E2723;
+    .Skill-Elements{
+        font-family: 'Gudea', sans-serif;
+        color: #9E9E9E;
+        text-align: left;
         font-size: 16px;
     }
-    .Socials{
-        display: flex;
-        justify-content: center;
-    }
     .About-Me{
-        margin-left: 3%;
         width: 100vw;
+        text-align: center;
+        margin: 0 auto;
     }
     .About-Me-Intro{
-        font-family:'Roboto Slab', serif;
-        font-size: 20px;
-        color: #252525;
+        font-family: 'Gudea', sans-serif;
+        font-size: 16px;
+        color: #9E9E9E;
+        text-align: left;
+
     }
     .Skills{
-        margin-left: 3%;
-        width: 350px;
+        text-align: center;
+        margin: 0 auto;
     }
-
-    #About-Me-Divider{
-        margin-right: 235px;
+    .Socials{
+        margin: 0 auto;
     }
-    #Skills-Divider{
-        margin-right: 310px;
+    .Socials-Sub-Header{
+        font-family: 'Gudea', sans-serif;
+        font-size: 20px;
+        color: #9E9E9E;
+        text-align: left;
     }
-    #Projects-Divider{
-        margin-right: 250px;
+    .Socials-Sub-Link{
+        font-family: 'Gudea', sans-serif;
+        color: #FAFAFA;
+        margin-left: 50px;
     }
-    #github-logo{
-        width: 40px;
-        height: 40px;
+    .Social-1{
+        width: 50%;
+        margin: 0;
+        float: left;
     }
-    #linkedin-logo{
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        padding-right: 10px;
-        padding-left: 10px;
-    }
-    #soundcloud-logo{
-        width: 40px;
-        height: 40px;
+    .Social-2{
+        width: 50%;
+        margin: 0;
+        float: left;
     }
 }
 /*
