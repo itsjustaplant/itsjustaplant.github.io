@@ -1,9 +1,9 @@
-@media  (max-width: 767px){
+@media  (max-width: 600px){
     body.dark{
-        animation: rocket-dark 0.4s forwards;
+        animation: theme-dark 0.4s forwards;
     }
     body.light{
-        animation: rocket-light 0.4s forwards;
+        animation: theme-light 0.4s forwards;
     }
     body{
         background-color: var(--main-background);
@@ -11,8 +11,10 @@
         margin-left: 2vw;
         margin-right: 2vw;
         --main-background: #212121;
-        --main-text: #fafafa;
-        --sub-text: #9E9E9E;
+        --main-text: #FAFAFA;
+        --sub-text: #ACACAC;
+        --large-font: 20px;
+        --small-font: 18px;
     }
     .Header{
         width: 96vw;
@@ -29,16 +31,17 @@
         width: 50vw;
         float: left;
         color: var(--main-text);
-        font-size: 20px;
         text-align: left;
     }
     #Name{
         font-family: 'Oxygen', sans-serif;
         color: var(--main-text);
+        font-size: var(--large-font);
     }
     #Brief{
         color: var(--sub-text);
         font-family: 'Gudea', sans-serif;
+        font-size: var(--small-font);
     }
     #Profile-Picture{
         border-radius: 50%;
@@ -49,14 +52,14 @@
     .Div-Header{
         font-family: 'Oxygen', sans-serif;
         color: var(--main-text);
-        font-size: 20px;
+        font-size: var(--large-font);
         text-align: left;
         margin-top: 100px;
     }
     .Div-Sub-Header{
         font-family: 'Oxygen', sans-serif;
         color: var(--main-text);
-        font-size: 20px;
+        font-size: var(--large-font);
         text-align: left;
 
     }
@@ -64,7 +67,7 @@
         font-family: 'Gudea', sans-serif;
         color: var(--sub-text);
         text-align: left;
-        font-size: 20px;
+        font-size: var(--small-font);
     }
     .About-Me{
         width: 96vw;
@@ -73,7 +76,7 @@
     }
     .About-Me-Intro{
         font-family: 'Gudea', sans-serif;
-        font-size: 20px;
+        font-size: var(--small-font);
         color: var(--sub-text);
         text-align: left;
 
@@ -90,13 +93,14 @@
     }
     .Socials-Sub-Header{
         font-family: 'Gudea', sans-serif;
-        font-size: 20px;
+        font-size: var(--large-font);
         color: var(--sub-text);
         text-align: left;
+        margin: 0 auto;
     }
     .Socials-Sub-Link{
         font-family: 'Oxygen', sans-serif;
-        font-size: 20px;
+        font-size: var(--small-font);
         color: var(--main-text);
         margin-left: 50px;
     }
@@ -165,22 +169,30 @@
         border-radius: 50%;
     }
 }
-@keyframes rocket-light {
-    100%{
-        background-color: #DFDFDF;
-        --main-text: #060606;
-        --sub-text: #626262;
-    }
+@keyframes theme-light {
+100%{
+    background-color: #DFDFDF;
+    --main-text: #060606;
+    --sub-text: #464646;
 }
-@keyframes rocket-dark {
+}
+@keyframes theme-dark {
     0%{
         background-color: #DFDFDF;
         --main-text: #060606;
-        --sub-text: #626262;
+        --sub-text: #464646;
     }
     100%{
         background-color: #212121;
         --main-text: #FAFAFA;
-        --sub-text: #9E9E9E;
+        --sub-text: #ACACAC;
+    }
+}
+@keyframes underline {
+    0%{
+        text-decoration: none;
+    }
+    100%{
+        text-decoration: underline;
     }
 }

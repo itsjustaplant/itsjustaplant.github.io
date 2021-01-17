@@ -1,21 +1,23 @@
-@media (min-width: 768px) {
+@media (min-width: 601px){
     /*
     Choosing color palette from
     https://htmlcolorcodes.com/color-chart/material-design-color-chart/
      */
     body.dark{
-        animation: rocket-dark 0.4s forwards;
+        animation: theme-dark 0.4s forwards;
     }
     body.light{
-        animation: rocket-light 0.4s forwards;
+        animation: theme-light 0.4s forwards;
     }
     body{
         background-color: var(--main-background);
         width: 540px;
         margin: 0 auto;
         --main-background: #212121;
-        --main-text: #fafafa;
-        --sub-text: #9E9E9E;
+        --main-text: #FAFAFA;
+        --sub-text: #ACACAC;
+        --large-font: 20px;
+        --small-font: 18px;
     }
     .Header{
         width: 540px;
@@ -32,16 +34,17 @@
         width: 390px;
         float: left;
         color: var(--main-text);
-        font-size: 20px;
         text-align: left;
     }
     #Name{
         font-family: 'Oxygen', sans-serif;
         color: var(--main-text);
+        font-size: var(--large-font);
     }
     #Brief{
         color: var(--sub-text);
         font-family: 'Gudea', sans-serif;
+        font-size: var(--small-font);
     }
     #Profile-Picture{
         border-radius: 50%;
@@ -52,34 +55,32 @@
     .Div-Header{
         font-family: 'Oxygen', sans-serif;
         color: var(--main-text);
-        font-size: 20px;
+        font-size: var(--large-font);
         text-align: left;
     }
     .Div-Sub-Header{
         font-family: 'Oxygen', sans-serif;
         color: var(--main-text);
-        font-size: 20px;
+        font-size: var(--large-font);
         text-align: left;
-
     }
     .Skill-Elements{
         font-family: 'Gudea', sans-serif;
         color: var(--sub-text);
         text-align: left;
-        font-size: 20px;
+        font-size: var(--small-font);
     }
     .About-Me{
         width: 540px;
         text-align: center;
         margin: 0 auto;
-
+        display: block;
     }
     .About-Me-Intro{
         font-family: 'Gudea', sans-serif;
-        font-size: 20px;
+        font-size: var(--small-font);
         color: var(--sub-text);
         text-align: left;
-
     }
     .Skills{
         width: 540px;
@@ -93,13 +94,14 @@
     }
     .Socials-Sub-Header{
         font-family: 'Gudea', sans-serif;
-        font-size: 20px;
+        font-size: var(--large-font);
         color: var(--sub-text);
         text-align: left;
+        margin: 0 auto;
     }
     .Socials-Sub-Link{
         font-family: 'Gudea', sans-serif;
-        font-size: 20px;
+        font-size: var(--large-font);
         color: var(--main-text);
         margin: 0 auto;
         text-decoration: none;
@@ -111,13 +113,11 @@
         width: 50%;
         float: left;
         margin: 0 auto;
-        font-size: 20px;
     }
     .Social-2{
         width: 50%;
         float: left;
         margin: 0 auto;
-        font-size: 20px;
     }
     .switch {
         position: relative;
@@ -173,19 +173,19 @@
     100%{
         background-color: #DFDFDF;
         --main-text: #060606;
-        --sub-text: #626262;
+        --sub-text: #464646;
     }
 }
 @keyframes theme-dark {
     0%{
         background-color: #DFDFDF;
         --main-text: #060606;
-        --sub-text: #626262;
+        --sub-text: #464646;
     }
     100%{
         background-color: #212121;
         --main-text: #FAFAFA;
-        --sub-text: #9E9E9E;
+        --sub-text: #ACACAC;
     }
 }
 @keyframes underline {
