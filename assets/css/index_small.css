@@ -15,6 +15,10 @@
         --sub-text: #ACACAC;
         --large-font: 20px;
         --small-font: 18px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow: hidden;
+        position: fixed;
     }
     .Header{
         width: 96vw;
@@ -55,13 +59,14 @@
         font-size: var(--large-font);
         text-align: left;
         margin-top: 100px;
+        width: 96vw;
     }
     .Div-Sub-Header{
         font-family: 'Oxygen', sans-serif;
         color: var(--main-text);
         font-size: var(--large-font);
         text-align: left;
-
+        width: 96vw;
     }
     .Skill-Elements{
         font-family: 'Gudea', sans-serif;
@@ -97,12 +102,13 @@
         color: var(--sub-text);
         text-align: left;
         margin: 0 auto;
+        width: 96vw;
     }
     .Socials-Sub-Link{
         font-family: 'Oxygen', sans-serif;
         font-size: var(--small-font);
         color: var(--main-text);
-        margin-left: 50px;
+        margin-left: 30px;
     }
     .Social-1{
         width: 50%;
@@ -121,7 +127,7 @@
         display: inline-block;
         width: 60px;
         height: 34px;
-        margin-left:40px;
+        float: right;
     }
     .switch input {
         opacity: 0;
@@ -163,6 +169,7 @@
     /* Rounded sliders */
     .slider.round {
         border-radius: 34px;
+        float: right;
     }
 
     .slider.round:before {

@@ -4,10 +4,12 @@
     https://htmlcolorcodes.com/color-chart/material-design-color-chart/
      */
     body.dark{
-        animation: theme-dark 0.4s forwards;
+        animation: theme-dark 0.6s forwards;
+        overflow-x: hidden;
     }
     body.light{
-        animation: theme-light 0.4s forwards;
+        animation: theme-light 0.6s forwards;
+        overflow-x: hidden;
     }
     body{
         background-color: var(--main-background);
@@ -18,6 +20,9 @@
         --sub-text: #ACACAC;
         --large-font: 20px;
         --small-font: 18px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow: hidden;
     }
     .Header{
         width: 540px;
@@ -125,6 +130,7 @@
         width: 60px;
         height: 34px;
         margin-left: 180px;
+        float: right;
     }
     .switch input {
         opacity: 0;
@@ -164,6 +170,7 @@
     /* Rounded sliders */
     .slider.round {
         border-radius: 34px;
+        float: right;
     }
     .slider.round:before {
         border-radius: 50%;
