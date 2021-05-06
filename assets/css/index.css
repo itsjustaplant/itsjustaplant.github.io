@@ -1,15 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
-html{
-    display: grid;
-}
 body{
     width: 100vw;
     height: 100vh;
     margin: 0;
-    display: grid;
-    grid-template-areas: "image"
-                         "content";
-    grid-template-rows: 200px 1fr;
     font-family: 'Quicksand', sans-serif;
     background-color: #b8d8be;
 }
@@ -40,11 +33,6 @@ body{
     font-size: 24px;
     font-weight: 400;
     color: #060606;
-}
-.bot__title{
-    font-weight: 500;
-    font-size: 30px;
-    margin-bottom: 5px;
 }
 .bot__content{
     padding-top: 0;
@@ -90,19 +78,22 @@ body{
     color: #62BD69;
 }
 @media screen and (max-width: 768px){
+    main{
+        padding: 3em 1em;
+    }
     .main__top{
-        padding: 80px 20px 20px 10px;
+
     }
     .main__bot{
-        padding: 10px 20px 10px 20px;
+        padding-top: 1em;
     }
 }
 @media screen and (min-width: 769px) {
-    .main__top{
-        padding: 120px 0 20px 120px;
+    main{
+        padding: 4em 6em 1em 6em;
     }
     .main__bot{
-        padding: 10px 40% 10px 120px;
+        padding-top: 1em;
     }
 }
 @keyframes show {
