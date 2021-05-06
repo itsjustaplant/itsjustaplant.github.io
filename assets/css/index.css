@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+html{
+    display: grid;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-areas: "image"
+                         "content";
+    grid-template-rows: 200px 1fr;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #b8d8be;
+}
+.main__top{
+    grid-area: image;
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    grid-template-columns: 150px 200px;
+}
+.top__image{
+    width: 99px;
+    height: 141px;
+    transition: color .3s ease-in-out;
+}
+.top__image:hover{
+    color: #62BD69;
+}
+.top__image:hover + .tenor-gif-embed{
+    opacity: 100;
+}
+.tenor-gif-embed{
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+.main__bot{
+    grid-area: content;
+    font-size: 24px;
+    font-weight: 400;
+    color: #060606;
+}
+.bot__title{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.bot__content{
+    padding-top: 0;
+    margin-top: 0;
+}
+.content__link{
+    text-decoration: none;
+    font-weight: bold;
+    color: initial;
+    background-image: linear-gradient(transparent calc(60%), #62BD69 20px);
+}
+.bot__container{
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+}
+.container__icon{
+    color: initial;
+    flex-basis: 100%;
+    transition: color .3s ease-in-out;
+    animation: show 1s forwards;
+    opacity: 0;
+}
+.container__icon:nth-child(1){
+    animation-delay: 0.5s;
+}
+.container__icon:nth-child(2){
+    animation-delay: 1.0s;
+}
+.container__icon:nth-child(3){
+    animation-delay: 1.5s;
+}
+.container__icon:nth-child(4){
+    animation-delay: 2.0s;
+}
+.container__icon:nth-child(5){
+    animation-delay: 2.5s;
+}
+.container__icon:nth-child(6){
+    animation-delay: 3.0s;
+}
+.container__icon:hover{
+    color: #62BD69;
+}
+@media screen and (max-width: 768px){
+    .main__top{
+        padding: 80px 20px 20px 10px;
+    }
+    .main__bot{
+        padding: 10px 20px 10px 20px;
+    }
+}
+@media screen and (min-width: 769px) {
+    .main__top{
+        padding: 120px 0 20px 120px;
+    }
+    .main__bot{
+        padding: 10px 40% 10px 120px;
+    }
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+}
+}
